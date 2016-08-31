@@ -1,0 +1,70 @@
+/*
+ * Fonts
+ */
+
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bangers'), local('Bangers-Regular'), url(https://fonts.gstatic.com/s/bangers/v8/yJQgrSMUoqRj-0SbnQsv4g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bungee Shade'), local('BungeeShade-Regular'), url(https://fonts.gstatic.com/s/bungeeshade/v2/HSW7pxPYXBWkq7OSnuXoeOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/*
+ *  Reset + Box-sizing
+ */
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+ * RESET FONT - SET 1 REM = 1 PX
+ */
+
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Bangers", cursive;
+  font-size: 1.6rem;
+}
+
+/*
+ * CONTAINER LIMIT
+ */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/*
+ * MAIN-HEADER AND CHILDRENS
+ */
+
+.main-header {
+  background-color: #1eabed;
+}
+
+.logo-slogan {
+  text-align: center;
+}
+
+.logo,
+.slogan {
+  display: block;
+}
