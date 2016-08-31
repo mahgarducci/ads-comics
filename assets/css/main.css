@@ -31,7 +31,7 @@
 }
 
 /*
- * RESET FONT - SET 1 REM = 1 PX
+ * RESET FONT - SET 1 REM = 10 PX
  */
 
 html {
@@ -48,6 +48,7 @@ body {
  */
 
 .container {
+  padding: 1rem;
   margin: 0 auto;
   max-width: 1200px;
 }
@@ -57,7 +58,7 @@ body {
  */
 
 .main-header {
-  background-color: #1eabed;
+  background-color: #2c3e50;
 }
 
 .logo-slogan {
@@ -67,4 +68,107 @@ body {
 .logo,
 .slogan {
   display: block;
+  margin: 0;
+  padding: 0;
+  color: #eee;
+}
+
+.logo {
+  font: 5.5rem 'Bungee Shade', cursive;
+  text-decoration: none;
+}
+
+.main-nav {
+  margin: 2rem 0;
+  padding: .5rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  border-top: .5rem solid #eee;
+  border-bottom: .5rem solid #eee;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  position: relative;
+  color: #ccc;
+  text-decoration: none;
+  transition: .2s ease-in-out;
+}
+
+.nav-link:before {
+  position: absolute;
+  top: 100%;
+  display: block;
+  content: "";
+  width: 0%;
+  height: .2rem;
+  transition: .2s ease-in-out;
+  background-color: #afe;
+}
+
+.nav-link:not(last-child) {
+  margin-right: 2rem;
+}
+
+.nav-link:hover {
+  color: #fff;
+  transition: .2s ease-in;
+}
+
+.nav-link:hover:before {
+  width: 100%;
+  transition: .25s ease-in;
+} 
+
+/*
+ * PRODUCTS AND CHILDRENS
+ */
+
+.products {
+  text-align: center;
+}
+
+.product {
+  position: relative;
+  margin: 2rem 0;
+  display: inline-block;
+  width: 30rem;
+}
+
+.product-thumbnail {
+  opacity: .7;
+  transition: .2s ease-in-out;
+}
+
+.product:hover .product-thumbnail,
+.product:hover .product-description {
+  opacity: 1;
+  transition: .2s ease-in;
+}
+
+.price {
+  display: block;
+}
+
+.price:before {
+  content: "Por R$: ";
+}
+
+.product-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  height: 10rem;
+  color: #2c3e50;
+  opacity: 0;
+  font-size: 9rem;
+  text-align: center;
+  text-decoration: none;
+  border: .3rem solid #2c3e50;
+  border-radius: 50%;
 }
