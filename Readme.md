@@ -2,6 +2,6 @@
 
 ## Equipe
 - Amanda Faro
-- Carlos Eduardo
+- Caio Henrique Mamprin
 - Marcus Garducci
 - Natan Siqueira
